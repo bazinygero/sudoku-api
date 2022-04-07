@@ -24,7 +24,9 @@ const joinValues = () => {
 }
 
 const solve = () => {
-
+    joinValues()
+    const data = submission.join('')
+    console.log('data', data)
     const options = {
         method: 'POST',
         url: 'https://solve-sudoku.p.rapidapi.com/',
