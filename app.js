@@ -35,9 +35,10 @@ const solve = () => {
           'X-RapidAPI-Host': 'solve-sudoku.p.rapidapi.com',
           'X-RapidAPI-Key': 'e9898f454amsh348c58f50e9ef58p1c865fjsn0d7a47e6cc94'
         },
-        data: '{"puzzle":"2.............62....1....7...6..8...3...9...7...6..4...4....8....52.............3"}'
-      };
-      
+        data: {
+            puzzle: data
+        }
+    }
       axios.request(options).then((response) => {
           console.log(response.data)
       }).catch((error) => {
